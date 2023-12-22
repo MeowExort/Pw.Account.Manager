@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using Pw.Account.Manager.Abstract;
+﻿using Pw.Account.Manager.Abstract;
 
 namespace Pw.Account.Manager.Entities;
 
@@ -9,6 +8,16 @@ public class AccountEntity : EntityBase
     /// VK Play логин
     /// </summary>
     public string Login { get; set; }
+    
+    /// <summary>
+    /// VK Play пароль
+    /// </summary>
+    public string Password { get; set; }
+    
+    /// <summary>
+    /// Тип авторизации
+    /// </summary>
+    public AuthorizationType AuthorizationType { get; set; } 
     
     /// <summary>
     /// Игровой аккаунт
@@ -49,4 +58,9 @@ public class AccountEntity : EntityBase
     /// Настройки аккаунта
     /// </summary>
     public string SettingsId { get; set; }
+}
+
+public enum AuthorizationType
+{
+    MailRu
 }

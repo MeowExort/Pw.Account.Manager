@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using Pw.Account.Manager.Abstract;
+﻿using Pw.Account.Manager.Abstract;
 
 namespace Pw.Account.Manager.Entities;
 
